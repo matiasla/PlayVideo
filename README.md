@@ -9,6 +9,6 @@ Este proyecto por el momento tiene una pagina Home, Login, Register, y Not found
 . CSS
 
 ## Licencia
-Mit
+MIT
 
 
