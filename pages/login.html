@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/login.css">
+    <!--TITLE-->
+    <title>PlayVideo Login</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="header__brand">
+            <i class="header__logo fas fa-play"></i>
+            <h1 class="header__title" tabindex="0">PlayVideo</h1>
+        </div>
+    </header>
+
+    <!--LOGIN-->
+    <section class="login">
+        <div class="login__container">
+            <h2 class="login__container--title" tabindex="0">Inicia sesión</h2>
+
+            <form class="login__container--form">
+                <input class="input" type="email" placeholder="Correo">
+                <input class="input" type="password" placeholder="Contraseña">
+                <button class="button">Iniciar sesión</button>
+                <div class="login__container--remember-me">
+                    <label>
+                        <input type="checkbox" id="cbox1" value="cbox1">Recuérdame
+                    </label>
+                    <a href="#">Olvidé mi contraseña</a>
+                </div>
+            </form>
+
+            <div class="login__container--social-media">
+                <div>
+                    <i class="fab fa-google" alt="Google icon"></i>
+                    <p>Inicia sesión con Google</p>
+                </div>
+
+                <div>
+                    <i class="fab fa-twitter" alt="Twitter icon"></i>
+                    <p>Inicia sesión con Twitter</p>
+                </div>
+            </div>
+
+            <p class="login__container--register">
+                No tienes ninguna Cuenta
+                <a href="#">Regístrate</a>
+            </p>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <a href="#">Términos de uso</a>
+        <a href="#">Declaración de privacidad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
+</body>
+
+</html>

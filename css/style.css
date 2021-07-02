@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #8F57FD;
+  font-family: 'Mulish', sans-serif; }
+
+/*---------------------------HEADER---------------------------*/
+.header {
+  background-color: #8F57FD;
+  height: 80px;
+  width: 100%;
+  /*flex*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__brand {
+  color: white;
+  /*flex*/
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.header__logo {
+  font-size: 3rem;
+  margin-left: 30px;
+  margin-right: 20px;
+  width: 30px; }
+
+.header__title {
+  font-size: 1.6rem; }
+
+.header__menu {
+  margin-right: 60px;
+  position: relative; }
+
+.header__menu:hover .header__menu--links,
+.header__menu--links:hover {
+  display: block; }
+
+.header__menu--profile {
+  color: white;
+  width: 40px;
+  /*flex*/
+  display: flex;
+  flex-direction: row; }
+
+.header__menu--icon {
+  margin-right: 8px; }
+
+.header__menu--links {
+  display: none;
+  margin-left: -40px;
+  padding-top: 20px;
+  position: absolute;
+  text-align: right;
+  width: 100px; }
+
+.header__menu--link {
+  color: white;
+  line-height: 1.6rem;
+  text-decoration: none; }
+
+.header__menu--link:hover {
+  text-decoration: underline; }
+
+/*---------------------------MAIN---------------------------*/
+.main__title {
+  color: white;
+  font-size: 3rem;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.categories__title {
+  color: white;
+  font-size: 1rem;
+  padding-left: 30px;
+  width: 100%; }
+
+.search {
+  background-color: #a171ff;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  display: block;
+  font-size: 1rem;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  outline: none;
+  padding: 0px 20px;
+  width: 70%; }
+
+.search::placeholder {
+  color: white;
+  font-size: 1rem; }
+
+/*---------------------------CAROUSEL---------------------------*/
+.carousel {
+  overflow-x: scroll;
+  margin-bottom: 150px;
+  padding: 30px;
+  position: relative;
+  width: 100%; }
+
+.carousel::-webkit-scrollbar {
+  width: 15px;
+  height: 10px; }
+
+.carousel::-webkit-scrollbar-track {
+  background-color: transparent; }
+
+/* the new scrollbar will have a flat appearance with the set background color */
+.carousel::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px; }
+
+/* this will style the thumb, ignoring the track */
+.carousel::-webkit-scrollbar-button {
+  background-color: #8F57FD; }
+
+/* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+.carousel::-webkit-scrollbar-corner {
+  background-color: transparent; }
+
+/* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+.carousel__container {
+  margin: 30px 0px;
+  padding-bottom: 10px;
+  white-space: nowrap; }
+
+.carousel-item {
+  background-color: pink;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 250px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: 450ms all;
+  transform-origin: center left;
+  width: 200px; }
+
+.carousel-item:hover .carousel-item__details {
+  opacity: 1; }
+
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(100px, 0, 0); }
+
+.carousel__container:hover .carousel-item {
+  opacity: 0.3; }
+
+.carousel__container:hover .carousel-item:hover {
+  opacity: 1;
+  transform: scale(1.5); }
+
+.carousel-item__img {
+  height: 250px;
+  object-fit: cover;
+  width: 200px; }
+
+.carousel-item__details {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  font-size: 10px;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 450ms opacity; }
+
+.carousel-item__details-play,
+.carousel-item__details-plus {
+  width: 20px; }
+
+.carousel-item__details--title {
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.carousel-item__details--subtitle {
+  font-size: 8px; }
+
+/*---------------------------FOOTER---------------------------*/
+.footer {
+  background-color: #8F57FD;
+  /*flex*/
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%; }
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none; }
+
+.footer a:hover {
+  text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
