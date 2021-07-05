@@ -103,30 +103,28 @@ body {
 /*---------------------------CAROUSEL---------------------------*/
 .carousel {
   overflow-x: scroll;
-  margin-bottom: 150px;
   padding: 30px;
   position: relative;
   width: 100%; }
 
 .carousel::-webkit-scrollbar {
-  width: 15px;
-  height: 10px; }
+  display: none; }
 
-.carousel::-webkit-scrollbar-track {
+/* .carousel::-webkit-scrollbar-track {
   background-color: transparent; }
-
+ */
 /* the new scrollbar will have a flat appearance with the set background color */
-.carousel::-webkit-scrollbar-thumb {
+/* .carousel::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 25px; }
+  border-radius: 25px; } */
 
 /* this will style the thumb, ignoring the track */
-.carousel::-webkit-scrollbar-button {
-  background-color: #8F57FD; }
+/* .carousel::-webkit-scrollbar-button {
+  background-color: #8F57FD; } */
 
 /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
-.carousel::-webkit-scrollbar-corner {
-  background-color: transparent; }
+/* .carousel::-webkit-scrollbar-corner {
+  background-color: transparent; } */
 
 /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
 .carousel__container {
